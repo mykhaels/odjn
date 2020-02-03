@@ -1,0 +1,21 @@
+body{
+    margin:0px 30px;
+    font-family: soleil,sans-serif,soleil,sans-serif;
+    background-color: whitesmoke;
+}
+
+header{
+    box-sizing: border-box;
+    height: 88px;
+}
+
+#logo{
+    padding-top: 20px;
+    height: 88px;
+}
+
+#titlePage{
+    font-weight:bolder;
+    font-size: 41px;
+    letter-spacing: 5px;
+}
