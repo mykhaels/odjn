@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 body{
-    margin:0px 30px;
-    font-family: soleil,sans-serif,soleil,sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
     background-color: whitesmoke;
 }
 
+/* Header Part */
 header{
     box-sizing: border-box;
     height: 88px;
+    margin-left: 50px;
+    margin-bottom: 150px;
 }
 
 #logo{
@@ -14,8 +19,104 @@ header{
     height: 88px;
 }
 
+
+/* Content Part */
 #titlePage{
-    font-weight:bolder;
-    font-size: 41px;
-    letter-spacing: 5px;
+    margin-left: 50px;
+    height: 200px;
+    width: 900px;
+    font-weight:600;
+    font-size: 60px;
+    letter-spacing: 10px;
+    white-space: normal;
+    overflow: hidden;
+    /* animation: typewriter 2s steps(60) 1s 1 normal both; */
+    
+}
+
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+.item-card:nth-child(odd){
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 40px;
+}
+
+.item-card{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+
+
+
+.item-card img{
+    height: 800px;
+    width: 600px;
+}
+
+.item-card .description{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.item-card .description span{
+    font-size: 20px;
+    color: lightslategray;
+}
+
+.item-card .description p{
+    font-size: 60px;
+    font-weight: 800;
+    margin-top:5px;
+}
+
+.item-card .description a{  
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+    display: flex;
+}
+
+@keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
+
+/* Footer Part */
+footer{
+    background-color: black;
+    color: white;
+    height: 300px;
+    padding-left:100px;
+}
+.contact hr{
+    width: 10px;
+    margin-left:0px;
+    height: 10px;
+    border:none;
+    background-color: white;
+    transition: width 2s;
+}
+
+.contact{
+    font-size:50px;
+}
+
+.contact hr:hover{
+    width:250px;
+}
+
+#socia-media{
+    
 }
